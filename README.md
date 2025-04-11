@@ -27,3 +27,41 @@ Install dependencies:
 
 ```bash
 pip install pygame
+
+Key	Action
+W / S	Move forward / backward
+A / D	Strafe left / right
+← / → Arrows	Rotate view left / right
+
+🗺️ Sample Map
+The game uses a 2D grid to define the world.
+In the grid:
+
+1 = Wall
+
+0 = Empty space
+
+python
+Kopyala
+Düzenle
+MAP = [
+    [1,1,1,1,1,1,1,1],
+    [1,0,0,0,0,0,0,1],
+    [1,0,1,0,1,0,0,1],
+    [1,0,1,0,0,0,0,1],
+    [1,0,0,0,1,0,0,1],
+    [1,0,0,0,0,0,0,1],
+    [1,1,1,1,1,1,1,1]
+]
+
+📁 Project Structure
+python
+Kopyala
+Düzenle
+.
+├── main.py          # Main loop and game logic
+├── map.py           # 2D map definition and handling
+├── player.py        # Player position, movement, and direction
+├── raycasting.py    # Core raycasting algorithm
+├── settings.py      # Resolution, colors, and game settings
+└── README.md        # Documentation (this file)
