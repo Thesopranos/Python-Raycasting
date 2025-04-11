@@ -2,10 +2,6 @@
 
 A basic raycasting engine built with Python and Pygame, simulating 3D graphics using 2D math — inspired by classic games like **Wolfenstein 3D**.
 
-## 🎮 Preview
-
-![Demo GIF](./assets/demo.gif) <!-- (Opsiyonel: varsa bir demo GIF'i burada gösterin) -->
-
 ## 🚀 Features
 
 - Basic raycasting algorithm with 2D maps
@@ -27,13 +23,15 @@ Install dependencies:
 
 ```bash
 pip install pygame
+```
 
-Key	Action
-W / S	Move forward / backward
-A / D	Strafe left / right
-← / → Arrows	Rotate view left / right
+### Key	Action  
+W / S => Move forward / backward  
+A / D =>	Strafe left / right  
+← / → Arrows => Rotate view left / right  
 
-🗺️ Sample Map
+
+### 🗺️ Sample Map
 The game uses a 2D grid to define the world.
 In the grid:
 
@@ -44,6 +42,7 @@ In the grid:
 python
 Kopyala
 Düzenle
+```bash
 MAP = [
     [1,1,1,1,1,1,1,1],
     [1,0,0,0,0,0,0,1],
@@ -53,15 +52,13 @@ MAP = [
     [1,0,0,0,0,0,0,1],
     [1,1,1,1,1,1,1,1]
 ]
-
-📁 Project Structure
-python
-Kopyala
-Düzenle
-.
-├── main.py          # Main loop and game logic
-├── map.py           # 2D map definition and handling
-├── player.py        # Player position, movement, and direction
-├── raycasting.py    # Core raycasting algorithm
-├── settings.py      # Resolution, colors, and game settings
-└── README.md        # Documentation (this file)
+```
+### 📁 Project Structure
+.  
+├── maps  
+├──── map1.map - # map example 1  
+├──── map2.map - # map example 1  
+├── src  
+├──── map.py  ----      # 2D map definition and handling  
+├── main.py  -------        # Main loop and game logic  
+└── README.md  -- # Documentation (this file)  
